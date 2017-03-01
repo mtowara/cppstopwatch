@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Stopwatch.C"
+#include "Stopwatch.H"
 
 int main(){
     Stopwatch swatch;
