@@ -30,7 +30,7 @@ using std::map;
 using std::string;
 using std::ostringstream;
 
-Stopwatch::Stopwatch() : active(true), mode(NONE)  {
+Stopwatch::Stopwatch() : mode(NONE), active(true)  {
 	records_of = new map<string, PerformanceData>();
 }
 
@@ -220,7 +220,7 @@ void Stopwatch::report(string perf_name, std::ostream& output) {
 
 	// To support Windows (otherwise string("=", perf_name.length() + 1) would do the job
 	string bar = "";
-	for (int i = 0; i < perf_name.length(); i++)
+	for (unsigned int i = 0; i < perf_name.length(); i++)
 		bar.append("=");
 
 	output << std::endl;

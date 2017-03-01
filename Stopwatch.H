@@ -184,12 +184,12 @@ public:
 	
 	/** Take time, depends on mode */
 	long double take_time();
-    
+
 protected:
 
 	/** Struct to hold the performance data */
 	struct PerformanceData {
-	
+
 		PerformanceData() :
 			clock_start(0),
 			total_time(0),
@@ -199,7 +199,7 @@ protected:
 			paused(false),
 			stops(0) {
 		}
-	
+
 		/** Start time */
 		long double	clock_start;
 
@@ -227,7 +227,7 @@ protected:
 
 	/** Pointer to the dynamic structure which holds the collection of performance data */
 	std::map<std::string, PerformanceData >* records_of;
-	
+
 	/** Flag to hold the clock's status */
 	bool active;
 };
