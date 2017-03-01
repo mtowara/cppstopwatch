@@ -19,7 +19,7 @@ along with Stopwatch.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef STOPWATCH_H
 #define STOPWATCH_H
 
-#include "Stdafx.h"
+#include "Stdafx.H"
 
 #ifndef WIN32
 	/* The classes below are exported */
